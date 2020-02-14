@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './App';
+import Homepage from './Homepage';
 import './scss/app';
 
-render(<App />, document.getElementById("root"));
+render(<Homepage />, document.getElementById("root"));
