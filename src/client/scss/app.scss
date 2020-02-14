@@ -2,4 +2,12 @@ $theme-colors: (
     'primary': #0091ea //Covalence Blue!  :D
 );
 
+$container-max-widths: (
+  sm: 640px,
+  md: 820px,
+  lg: 1060px,
+  xl: 1240px
+) !default;
+
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
