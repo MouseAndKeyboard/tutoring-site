@@ -1,16 +1,48 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
 $theme-colors: (
     'primary': #0091ea //Covalence Blue!  :D
 );
 
-$container-max-widths: (
-  sm: 640px,
-  md: 820px,
-  lg: 1060px,
-  xl: 1240px
-) !default;
+// $container-max-widths: (
+//   sm: 640px,
+//   md: 820px,
+//   lg: 1060px,
+//   xl: 1240px
+// ) !default;
 
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.holder {
+  width: 80%;
+}
 
 .title {
   font-size: 30pt;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 1110px;
+  padding: 20px;
+  text-align: center;
+}
+
+.herobg {
+  background-image: url("https://www.swoopanalytics.com/wp-content/uploads/2019/02/Group-members.jpg");
+  /* Set a specific height */
+  height: 500px;
+  
+  filter: blur(15px);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
