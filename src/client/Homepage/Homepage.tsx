@@ -1,10 +1,10 @@
 import React, { useState, useEffect, Fragment } from 'react'
-import Navigation from './Navbar';
+import Navigation from '../Navbar';
 import { Container, Jumbotron, Carousel, CarouselItem } from 'react-bootstrap';
 
 import Typist from 'react-typist';
 
-import TutorProfileCard from './TutorProfileCard';
+import TutorProfileCard from '../TutorProfileCard';
 
 const Homepage = () => {
 
