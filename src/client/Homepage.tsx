@@ -4,8 +4,6 @@ import React, { useState, useEffect, Fragment } from "react";
 
 import Typist from 'react-typist';
 
-import TutorProfileCard from './TutorProfileCard';
-
 const Homepage = () => {
     const whoweare = [
         "high acheivers",
