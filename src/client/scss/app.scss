@@ -57,12 +57,14 @@ $theme-colors: (
   -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
   -moz-box-shadow: 0 2px 12px rgba(0,0,0,.5);
   box-shadow: 0 1px 2px #000;
+  transform: rotate(-.5deg);
   -webkit-transform: rotate(-.5deg);
   -moz-transform: rotate(-.5deg);
   -o-transform: rotate(-.5deg);
 }
 
 #notes li:nth-child(even) {
+  transform: rotate(.5deg);
   -webkit-transform: rotate(.5deg);
   -moz-transform: rotate(.5deg);
   -o-transform: rotate(.5deg);
@@ -95,12 +97,14 @@ $theme-colors: (
   -webkit-box-shadow: 0 0 5px #888;
   -moz-box-shadow: 0 0 5px #888;
   box-shadow: 2px 2px 2px #000;
+  transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
   -moz-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
 }
 
 #notes li:nth-child(even)::before {
+  transform: rotate(6deg);
   -webkit-transform: rotate(6deg);
   -moz-transform: rotate(6deg);
   -o-transform: rotate(6deg);
