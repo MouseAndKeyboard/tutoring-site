@@ -1,25 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav';
+import {Container, Navbar, Nav, NavbarBrand, NavbarToggler, Collapse, NavLink} from 'reactstrap';
 
 const Navigation = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" color="dark" dark>
             <Container className="width">
-                <Navbar.Brand href="#home">BPhil Tutor Gang</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#hire">Hire a Tutor</Nav.Link>
-                        <Nav.Link href="#apply">Become a Tutor</Nav.Link>
+                <NavbarBrand href="#home">BPhil Tutor Gang</NavbarBrand>
+                <NavbarToggler aria-controls="responsive-navbar-nav" onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="mr-auto" navbar>
+                        <NavLink href="#hire">Hire a Tutor</NavLink>
+                        <NavLink href="#apply">Become a Tutor</NavLink>
                     </Nav>
-                    <Nav>
-                        <Nav.Link href="#about">About us</Nav.Link>
-                        <Nav.Link href="#contact">Contact us</Nav.Link>
+                    <Nav navbar>
+                        <NavLink href="#about">About us</NavLink>
+                        <NavLink href="#contact">Contact us</NavLink>
                     </Nav>
-                </Navbar.Collapse>
+                </Collapse>
             </Container>
         </Navbar>
     );

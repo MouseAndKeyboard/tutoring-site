@@ -1,10 +1,8 @@
 import Navigation from './Navbar';
-import { Container, Jumbotron, Carousel, CarouselItem, Button } from 'react-bootstrap';
+import { Container, Button } from 'reactstrap';
 import React, { useState, useEffect, Fragment } from "react";
 
 import Typist from 'react-typist';
-
-import TutorProfileCard from './TutorProfileCard';
 
 const Homepage = () => {
     const whoweare = [
@@ -46,7 +44,7 @@ const Homepage = () => {
                                 ""
                             )}
                     <br />
-                    <Button variant="success" size="lg" className="m-3 p-3 px-5">Book a Tutor Now</Button>
+                    <Button color="success" size="lg" className="m-3 p-3 px-5">Book a Tutor Now</Button>
                     </span>
                     
             </Container>
