@@ -47,7 +47,7 @@ const Homepage = () => {
                     <Button color="success" size="lg" className="m-3 p-3 px-5">Book a Tutor Now</Button>
                 </span>
                 
-                <ul id="notes" className="list-inline d-flex justify-content-around">
+                <ul id="notes" className="list-inline d-flex flex-wrap justify-content-around">
                     <li className="list-inline-item">
                         <p>99+
                         ATAR

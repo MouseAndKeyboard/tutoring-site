@@ -29,7 +29,8 @@ $theme-colors: (
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 1110px;
+  width: inherit;
+  max-width: inherit;
   padding: 20px;
   text-align: center;
 }
@@ -45,6 +46,10 @@ $theme-colors: (
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#navigation {
+  z-index: 3;
 }
 
 #notes li {

@@ -9,10 +9,10 @@ const Navigation = () => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <Navbar collapseOnSelect expand="lg" color="dark" dark>
+        <Navbar collapseOnSelect expand="lg" color="dark" id="navigation" dark>
             <Container className="width">
                 <NavbarBrand href="#home">BPhil Tutor Gang</NavbarBrand>
-                <NavbarToggler aria-controls="responsive-navbar-nav" onClick={toggle} />
+                <NavbarToggler aria-controls="responsive-navbar-nav " onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavLink href="#hire">Book a Tutor</NavLink>
