@@ -15,7 +15,7 @@ const Navigation = () => {
                 <NavbarToggler aria-controls="responsive-navbar-nav" onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
-                        <NavLink href="#hire">Hire a Tutor</NavLink>
+                        <NavLink href="#hire">Book a Tutor</NavLink>
                         <NavLink href="#apply">Become a Tutor</NavLink>
                     </Nav>
                     <Nav navbar>
